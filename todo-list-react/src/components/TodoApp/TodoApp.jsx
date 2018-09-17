@@ -39,6 +39,7 @@ class TodoApp extends Component {
           <label htmlFor="new-todo">What Needs to be done</label>
           <input
             type="text"
+            autoComplete="off"
             id="new-todo"
             onChange={this.handleChange}
             value={this.state.text}
