@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import NewTodo from "./components/NewTodo/New";
-import Todo from "./components/Todo/Todo";
+import TodoApp from "./components/TodoApp/TodoApp";
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Todo />
-        <NewTodo />
+        <TodoApp />
       </React.Fragment>
     );
   }
