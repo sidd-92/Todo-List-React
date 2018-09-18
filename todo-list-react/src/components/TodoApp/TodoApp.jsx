@@ -33,19 +33,24 @@ class TodoApp extends Component {
   render() {
     return (
       <div>
-        <h3>All TODO</h3>
-        <TodoList items={this.state.items} />
-        <form onSubmit={this.handleSubmit}>
+        <h3>List of All Todos</h3>
+        <form onSubmit={this.handleSubmit} className="form-inline">
           <label htmlFor="new-todo">What Needs to be done</label>
           <input
+            className="form-control mx-1"
+            required
             type="text"
             autoComplete="off"
             id="new-todo"
             onChange={this.handleChange}
             value={this.state.text}
           />
-          <button>add# {this.state.items.length + 1}</button>
+
+          <button className="btn btn-primary btn-sm">
+            add# {this.state.items.length + 1}
+          </button>
         </form>
+        <TodoList items={this.state.items} date="1st Jan" />
       </div>
     );
   }
