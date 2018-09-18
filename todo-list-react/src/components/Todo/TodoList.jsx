@@ -3,9 +3,11 @@ import React, { Component } from "react";
 class TodoList extends Component {
   render() {
     return (
-      <ul>
+      <ul className="list-group">
         {this.props.items.map(item => (
-          <li key={item.id}>{item.text}</li>
+          <li className="list-group-item" key={item.id}>
+            {item.text}
+          </li>
         ))}
       </ul>
     );

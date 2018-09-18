@@ -44,7 +44,7 @@ class TodoApp extends Component {
             onChange={this.handleChange}
             value={this.state.text}
           />
-          <button>Add # {this.state.items.length + 1}</button>
+          <button>add# {this.state.items.length + 1}</button>
         </form>
       </div>
     );
